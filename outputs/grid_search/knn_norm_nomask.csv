@@ -1,0 +1,17 @@
+mean_test_score,rank_test_score,param_regressor__metric,param_regressor__n_neighbors,param_regressor__weights
+-2.0157622427546507,1,cosine,10,uniform
+-2.0864326959346,2,cosine,15,uniform
+-2.147725548875988,3,cosine,10,distance
+-2.1545100072650714,4,euclidean,15,uniform
+-2.15489223327303,5,euclidean,10,uniform
+-2.161173668225864,6,cosine,15,distance
+-2.1626483173700244,7,cosine,30,uniform
+-2.1800511657114807,8,cosine,30,distance
+-2.231992478515134,9,euclidean,15,distance
+-2.2408053694780876,10,euclidean,10,distance
+-2.242937978710177,11,euclidean,30,uniform
+-2.3063106427343207,12,euclidean,30,distance
+-2.3070858396274074,13,euclidean,4,uniform
+-2.3632441629410095,14,euclidean,4,distance
+-2.4734454190121333,15,cosine,4,uniform
+-2.568135421553607,16,cosine,4,distance

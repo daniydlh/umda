@@ -1,0 +1,5 @@
+mean_test_score,rank_test_score,param_regressor__fit_intercept,param_regressor__normalize
+-1744.2015028447986,1,True,True
+-1744.20150284487,2,True,False
+-2038.5457772364266,3,False,True
+-2038.5457772364266,3,False,False

@@ -21,12 +21,12 @@ gbr:
   learning_rate: [ 0.001, 0.01, 0.1, 0.5, 1.]
   n_estimators: [50, 100, 150, 300]
   min_samples_split: [0.1, 0.3, 0.6, 1.]
-  min_samples_leaf: [0.1, 0.3, 0.6, 1.]
+  min_samples_leaf: [1, 2, 5, 10]
   subsample: [0.2, 0.4, 0.6, 0.8, 1]
   # max_depth: [3, 5, 10, 15]
 gpr:
   # alpha: [1e-10., 5.5e-8, 3e-5, 1e-3, 0.02, 10.]
-  alpha: [1e-10., 5.5e-8, 3e-5]
+  alpha: [1e-10, 5.5e-8, 3e-5]
   n_restarts_optimizer: [3, 5, 10,]
 # br:
 #   normalize: [true, false]
