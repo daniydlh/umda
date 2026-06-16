@@ -1,6 +1,6 @@
 linear_regression:
-  regressor__fit_intercept: true
-  regressor__normalize: false
+  regressor__fit_intercept: false
+  regressor__normalize: true
 ridge: &id001
   regressor__alpha: 1.
   regressor__fit_intercept: true
@@ -8,21 +8,21 @@ ridge: &id001
 br: *id001
 svr:
   regressor__C: 100.
-  regressor__epsilon: 1e-1
+  regressor__epsilon: 1.
   regressor__kernel: rbf
   regressor__tol: 1e-5
 knn:
-  regressor__metric: cosine
+  regressor__metric: euclidean
   regressor__n_neighbors: 30
-  regressor__weights: uniform
+  regressor__weights: distance
 rfr:
-  regressor__n_estimators: 20
+  regressor__n_estimators: 50
 gbr:
   regressor__learning_rate: 0.01
-  regressor__min_samples_leaf: 1
+  regressor__min_samples_leaf: 2
   regressor__min_samples_split: 0.1
-  regressor__n_estimators: 100
-  regressor__subsample: 0.2
+  regressor__n_estimators: 50
+  regressor__subsample: 0.4
 gpr:
   regressor__alpha: 5.5e-8
-  regressor__n_restarts_optimizer: 3
+  regressor__n_restarts_optimizer: 10
