@@ -27,7 +27,7 @@ umap_kwargs = {
     "low_memory": False
     }
 
-embedding_path = "../data/processed/pipeline_embeddings_70.h5"
+embedding_path = "data/processed/pipeline_embeddings_70.h5"
 
 with h5py.File(embedding_path, "r") as h5_file:
     vectors = np.array(h5_file["pca"]).astype(np.float32)

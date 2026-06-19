@@ -1,5 +1,11 @@
-mean_test_score,rank_test_score,param_regressor__n_estimators
--1.2680308719576563,1,20
--1.2772877083756433,2,50
--1.2820046732669317,3,30
--1.307000405106653,4,10
+mean_test_score,rank_test_score,param_regressor__alpha,param_regressor__fit_intercept,param_regressor__normalize
+-0.9697370937647877,1,1.0,True,True
+-0.9931244037307387,2,0.5,True,True
+-1.1482176113664662,3,0.1,True,True
+-1.304975833870971,4,0.05,True,True
+-2.1694841707375194,5,0.01,True,True
+-156.52662199681407,6,1.0,False,True
+-157.63898539131426,7,0.5,False,True
+-162.8936849143294,8,0.1,False,True
+-168.08383701868516,9,0.05,False,True
+-190.5324851521374,10,0.01,False,True

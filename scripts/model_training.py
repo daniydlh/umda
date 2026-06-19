@@ -131,7 +131,7 @@ def main(
     #rng = np.random.default_rng(seed)
     logger.info("Loading data")
     # prepare and load data
-    data = h5py.File("../data/processed/pipeline_embeddings_70.h5", "r")
+    data = h5py.File("data/processed/pipeline_embeddings_70.h5", "r")
     original = h5py.File("../data/processed/smiles_embeddings_300.h5", "r")
     pipeline = load("../models/embedding_pipeline.pkl")
     pca = load("../models/pca_model.pkl")

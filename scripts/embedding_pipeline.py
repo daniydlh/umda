@@ -41,7 +41,7 @@ rng = np.random.default_rng(seed)
 
 logger.info("Loading mol2vec model.")
 
-m2v_model = smi_vec.load_model("../models/mol2vec_model.pkl")
+m2v_model = smi_vec.load_model("models/mol2vec_model.pkl")
 
 # number of feature dimensions for the embedding model
 embedding_dim = 300

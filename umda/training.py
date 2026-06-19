@@ -105,11 +105,11 @@ def grid_cv_search(data: Tuple[np.ndarray], estimator, hparams, seed: int, n_spl
 
 
 def get_best_model(estimator, data: Tuple[np.ndarray], cv, **kwargs):
-    print(cv)
     kwargs.setdefault("n_jobs", 8)
     kwargs.setdefault("scoring", "neg_mean_squared_error")
     X, y, indices = data
-    scores = cross_val_score(estimator, X, y, groups=indices, cv=cv, **kwargs)
+    scores = cross_val_score(estimator, X, y, groups=indices, **kwargs)
+    print(scores)
     best_set = scores.argmax()
     # now get retrieve the dataset and refit
     for index, split in enumerate(cv.split(X, y, indices)):
